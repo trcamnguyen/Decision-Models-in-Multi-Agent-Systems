@@ -1,0 +1,13 @@
+.venv/
+.research/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.env
+data/
+data-pre-mapping-normalization/
+runs/
+*.pyc
+.test-tmp/
