@@ -1,0 +1,5 @@
+Inspect the current implementation against the task and execution evidence.
+Correct identified defects while preserving valid behavior.
+Public tests are incomplete evidence; consider requirements beyond them.
+Return exactly one Python code block with the complete revised solution.
+If no change is justified, return the current solution unchanged.

@@ -1,0 +1,4 @@
+Produce a complete Python implementation for the requested function.
+Use the task and relevant notes; inspect existing code and feedback if present.
+Return exactly one Python code block containing the full solution,
+including necessary standard-library imports. Do not return a diff.

@@ -1,0 +1,71 @@
+architecture_version: pilot_v0
+run_mode: real
+seed: 42
+concurrency: 1
+prompts_dir: prompts
+run_root: runs
+router:
+  kind: laya_td
+  model_id: convaiinnovations/laya-typed-decisions
+  revision: 989e28febe5886389496fe13a8036c62b2a20ae0
+  device: cpu
+  sdk_version: 0.4.37
+  max_len: 1024
+  head_max_len: 256
+  timeout_seconds: 30
+  load_timeout_seconds: 300
+  decision_policy: argmax
+  probability_sum_tolerance: 0.0003
+  auto_checkpoint_selection: false
+  fallback: none
+  view_policy: routing_view_v0
+workers:
+  backend: openai_compatible
+  requested_model: Qwen/Qwen2.5-Coder-7B-Instruct
+  served_model: null
+  revision: c03e6d358207e414f1eca0bb1891e29f1db0e242
+  chat_template_hash: cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f
+  deployment_attested: false
+  quantization: null
+  base_url_env: WORKER_BASE_URL
+  api_key_env: WORKER_API_KEY
+  temperature: 0
+  top_p: 1
+  max_new_tokens: 1024
+  context_limit: 8192
+  request_timeout_seconds: 120
+  automatic_retries: 0
+  effective_decoding: null
+  seed_supported: false
+  seed: 42
+  seed_effective: null
+benchmark:
+  name: mbpp_plus
+  dataset_version: v0.2.0
+  sample_size: 20
+  sample_seed: 42
+  manifest: data/manifests/pilot_20.json
+  public_feedback_policy: mbpp_public_original_examples_v0
+budget:
+  max_worker_dispatches: 6
+  episode_timeout_seconds: 900
+execution:
+  backend: docker
+  image_digest: null
+  cpus: 1
+  memory_mb: 512
+  pids_limit: 64
+  public_suite_timeout_seconds: 10
+  startup_grace_seconds: 5
+  network: none
+evaluation:
+  mode: offline_only
+  image_digest: null
+  dataset_path: data/private/mbpp_plus.jsonl
+  package_version: 0.3.1
+  timeout_seconds: 900
+logging:
+  save_exact_model_payloads: true
+  save_full_artifacts: true
+  save_state_snapshots: true
+  redact_secrets: true

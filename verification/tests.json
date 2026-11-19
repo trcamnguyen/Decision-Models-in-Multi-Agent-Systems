@@ -1,0 +1,7 @@
+{
+  "command": "python -m pytest -q --basetemp=.test-tmp/acceptance --tb=short",
+  "passed": 36,
+  "skipped": 6,
+  "skip_reason": "Docker image and daemon unavailable; opt-in sandbox tests",
+  "compileall": "passed"
+}

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "slm-mas-pilot"
+version = "0.1.0"
+description = "Auditable sequential Laya-TD / Qwen MBPP+ pilot"
+requires-python = ">=3.11"
+dependencies = ["PyYAML==6.0.3"]
+
+[project.optional-dependencies]
+test = ["pytest==8.3.4"]
+router = ["laya==0.4.37"]
+worker = ["transformers==5.9.0"]
+evaluation = ["evalplus==0.3.1"]
+
+[project.scripts]
+slm-mas = "slm_mas.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
