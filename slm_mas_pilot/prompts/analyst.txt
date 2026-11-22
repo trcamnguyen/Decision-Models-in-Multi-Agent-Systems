@@ -1,0 +1,3 @@
+Analyze the requirements, a suitable algorithm, and relevant edge cases.
+If code or execution feedback is supplied, explain relevant issues.
+Return concise analysis notes. Do not return a replacement implementation.

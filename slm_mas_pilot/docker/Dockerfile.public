@@ -1,0 +1,7 @@
+# Pass a resolved digest at build time; run config pins the resulting image ID.
+ARG PYTHON_BASE=python:3.11-slim
+FROM ${PYTHON_BASE}
+COPY src/slm_mas/execution/public_runner.py /app/public_runner.py
+USER 65532:65532
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+ENTRYPOINT []

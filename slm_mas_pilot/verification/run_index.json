@@ -1,0 +1,126 @@
+{
+  "20261119T154728-mock-fdd99aa8": {
+    "relative_path": "runs/20261119T154728-mock-fdd99aa8",
+    "summary": {
+      "run_id": "20261119T154728-mock-fdd99aa8",
+      "run_mode": "mock",
+      "selected": 3,
+      "successful": 0,
+      "valid_episodes": 0,
+      "determined_outcomes": 0,
+      "strict_success_over_selected": 0.0,
+      "strict_success_over_valid_episodes": null,
+      "evaluation_coverage": 0.0,
+      "exclusion_reasons": {
+        "not_run": 3
+      },
+      "role_distribution": {
+        "implementer": 3,
+        "repairer": 3
+      },
+      "errors": {},
+      "termination_counts": {
+        "router_stop": 3
+      },
+      "evaluation_status_counts": {
+        "not_run": 3
+      },
+      "public_pass_count": 3,
+      "base_pass_count": 0,
+      "plus_pass_count": 0,
+      "transitions": {
+        "repeated_role": 0,
+        "unchanged_code": 0,
+        "fail_to_pass": 3,
+        "pass_to_fail": 0,
+        "stop_on_public_fail": 0
+      },
+      "monetary_cost": null,
+      "cold_setup_ms": 0,
+      "total_run_ms": 250.0,
+      "interpretation": "Synthetic software verification only; no real model result."
+    }
+  },
+  "20261119T154729-real-cbc0bab0": {
+    "relative_path": "runs/20261119T154729-real-cbc0bab0",
+    "summary": {
+      "run_id": "20261119T154729-real-cbc0bab0",
+      "run_mode": "real",
+      "selected": 3,
+      "successful": 0,
+      "valid_episodes": 0,
+      "determined_outcomes": 0,
+      "strict_success_over_selected": 0.0,
+      "strict_success_over_valid_episodes": null,
+      "evaluation_coverage": 0.0,
+      "exclusion_reasons": {
+        "blocked": 3
+      },
+      "role_distribution": {},
+      "errors": {
+        "preflight_blocked": 3
+      },
+      "termination_counts": {
+        "preflight_blocked": 3
+      },
+      "evaluation_status_counts": {
+        "not_run": 3
+      },
+      "public_pass_count": 0,
+      "base_pass_count": 0,
+      "plus_pass_count": 0,
+      "transitions": {
+        "repeated_role": 0,
+        "unchanged_code": 0,
+        "fail_to_pass": 0,
+        "pass_to_fail": 0,
+        "stop_on_public_fail": 0
+      },
+      "monetary_cost": null,
+      "cold_setup_ms": null,
+      "total_run_ms": 375.0,
+      "interpretation": "Descriptive pilot with public feedback; no causal routing accuracy claim."
+    }
+  },
+  "20261119T154730-real-faa6ad04": {
+    "relative_path": "runs/20261119T154730-real-faa6ad04",
+    "summary": {
+      "run_id": "20261119T154730-real-faa6ad04",
+      "run_mode": "real",
+      "selected": 20,
+      "successful": 0,
+      "valid_episodes": 0,
+      "determined_outcomes": 0,
+      "strict_success_over_selected": 0.0,
+      "strict_success_over_valid_episodes": null,
+      "evaluation_coverage": 0.0,
+      "exclusion_reasons": {
+        "blocked": 20
+      },
+      "role_distribution": {},
+      "errors": {
+        "preflight_blocked": 20
+      },
+      "termination_counts": {
+        "preflight_blocked": 20
+      },
+      "evaluation_status_counts": {
+        "not_run": 20
+      },
+      "public_pass_count": 0,
+      "base_pass_count": 0,
+      "plus_pass_count": 0,
+      "transitions": {
+        "repeated_role": 0,
+        "unchanged_code": 0,
+        "fail_to_pass": 0,
+        "pass_to_fail": 0,
+        "stop_on_public_fail": 0
+      },
+      "monetary_cost": null,
+      "cold_setup_ms": null,
+      "total_run_ms": 233.9999999385327,
+      "interpretation": "Descriptive pilot with public feedback; no causal routing accuracy claim."
+    }
+  }
+}
